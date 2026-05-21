@@ -4,3 +4,9 @@ body{
 header{
     background-color: rgb(186, 188, 190);
 }
+h1{
+    background-color:rgb(186, 188, 190)
+}
+#agro{
+    width: 600px;
+}
