@@ -1,27 +1,142 @@
-body{
+/* Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     background-color: rgb(251, 253, 251);
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
-header{
+
+/* Header */
+header {
     background-color: rgb(94, 187, 130);
+    padding: 20px;
     border-radius: 12px;
+    margin-bottom: 30px;
 }
-h1, h2, p {
-    background-color: rgb(94, 187, 130);
-    font-size: 16px;
-    margin: 0 0 10px;
+
+.barra-navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-#agro{
-    width: 600px;
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
 }
-#agro2{
-    width: 200px;
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
-footer{
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.links a:hover {
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.conteudo {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: rgb(94, 187, 130);
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+#agro {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Lista de Soluções */
+.solucoes-lista {
+    list-style: none;
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.solucoes-lista li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.solucoes-lista li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: rgb(94, 187, 130);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
     background-color: rgb(94, 187, 130);
     padding: 30px 20px;
-    min-height: 100px;
+    text-align: center;
+    margin-top: 30px;
     border-radius: 12px;
+    color: white;
+}
+
+footer p {
+    margin-bottom: 10px;
 }
